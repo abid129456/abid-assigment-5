@@ -34,3 +34,23 @@ document.addEventListener("DOMContentLoaded", function() {
         document.getElementById('activity-log').innerHTML = '';
     });
 });
+
+
+document.getElementById("alert").addEventListener("click", function(){
+    alert('Board updated Successfully')
+})
+document.getElementById("alert-2").addEventListener("click", function(){
+    alert('Board updated Successfully')
+})
+document.getElementById("alert-3").addEventListener("click", function(){
+    alert('Board updated Successfully')
+})
+document.getElementById("alert-4").addEventListener("click", function(){
+    alert('Board updated Successfully')
+})
+document.getElementById("alert-5").addEventListener("click", function(){
+    alert('Board updated Successfully')
+})
+document.getElementById("alert-6").addEventListener("click", function(){
+    alert('Board updated Successfully')
+})

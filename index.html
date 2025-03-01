@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My second JS assignment</title>
+    <title>My assignment--5</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
@@ -24,7 +24,7 @@
                             <img class="h-6 w-6" src="./assets/checkbox.png" alt="">
                             <h1 id="completed-count" class="font-bold text-xl">23</h1>
                         </div>
-                        <img id="btn-lst" class="h-7 w-7" src="./assets/theme-btn.png" alt="">
+                        <img id="color-btn" class="h-7 w-7 cursor-pointer" src="./assets/theme-btn.png" alt="">
                     </div>
                 </nav>
             </div>
@@ -46,7 +46,7 @@
                         </div>
     
                         <a href="./index2.html">
-                            <div id="click-btn" class="flex items-center gap-3 pt-6 pb-6 pl-11 pr-24 bg-gradient-to-r from-blue-500 to-blue-200 rounded-lg w-96">
+                            <div id="click-btn" class="flex items-center gap-3 pt-6 pb-6 pl-11 pr-24 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-lg w-96">
                                 <img class="h-10 w-10" src="assets/board.png" alt="">
                                 <div>
                                     <h1 class="font-semibold text-xl">Discover Something <br>New Today!</h1>
@@ -68,7 +68,6 @@
                     <hr class="border-t-2 border-dashed border-gray-200 mt-4">
     
                     <div class="grid grid-cols-3 mt-4 gap-4">
-                        <!-- First Task Div -->
                         <div class="task-div bg-blue-100 p-4 rounded-lg">
                             <div class="bg-white rounded-lg p-1 inline-block mb-2">
                                 <h5>ShopEase</h5>
@@ -202,51 +201,9 @@
         </main>
     </div>
 
-  
-    
-<script>
-     document.addEventListener("DOMContentLoaded", function() {
-    const buttons = document.querySelectorAll('.task-btn');
-
-    for (const button of buttons) {
-        button.addEventListener('click', function() {
-            const taskDiv = this.closest('.task-div');
-            taskDiv.classList.add('opacity-50', 'pointer-events-none');
-
-            const taskDescription = taskDiv.querySelector('p').innerText;
-            const activityLog = document.getElementById('activity-log');
-            const newLog = document.createElement('div');
-            newLog.classList.add('p-4', 'bg-gray-100', 'rounded-lg', 'mb-4');
-            newLog.innerHTML = `<p>${taskDescription}</p>`;
-            activityLog.appendChild(newLog);
-
-            let taskCount = document.getElementById("task-count");
-            let currentTaskCount = parseInt(taskCount.innerText);
-            if (currentTaskCount > 0) {
-                taskCount.innerText = currentTaskCount - 1;
-            }
-
-            let completedCount = document.getElementById("completed-count");
-            let currentCompletedCount = parseInt(completedCount.innerText);
-            completedCount.innerText = currentCompletedCount + 1;
-
-            this.disabled = true;
-            this.innerText = "Done";
-            this.classList.add("bg-gray-400");
-        });
-    }
-
-    document.getElementById('clear-history').addEventListener('click', () => {
-        document.getElementById('activity-log').innerHTML = '';
-    });
-});
-
-</script>
-
-<script src="script/click.js"></script>
-
-
-
+  <script src="script/click.js"></script>
+   <script src="script/scripts.js"></script>
+   <script src="script/color.js"></script>
 
 </body>
 </html>

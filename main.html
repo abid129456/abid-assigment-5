@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body class="container mx-auto">
+    <header>
+        <div class="p-2 bg-blue-100 rounded-lg">
+            <nav class="flex justify-between">
+                <div class="flex items-center gap-4">
+                        <img class="h-10 w-10 " src="./assets/logo.png" alt="">
+                    <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                   <div>
+                    <button id="back" class="bg-blue-700 p-3 rounded-lg text-white font-semibold">Back to Desk</button>
+                   </div>
+            </nav>
+        </div>
+    </header>
+     <h1 class="font-bold text-center mt-4 ">Blogs</h1>
+    <main>
+        <section>
+            <div class="bg-blue-100 h-10 p-2 rounded-lg mt-4">
+                <p class="font-bold">Question-1: What are the different ways to select an element in the DOM?</p>
+            </div>
+            <div class="bg-blue-100 h-16 p-2 rounded-lg mt-1">
+                <p>getElementById(). getElementsByTagName(). getElementsByClassName(). querySelector() .querySelectorAll()</p>
+            </div>
+        </section>
+
+
+        <section>
+            <div class="bg-blue-100 h-10 p-2 rounded-lg mt-4">
+                <p class="font-bold">Question-2: What is the difference between innerHTML, innerText, and textContent ?</p>
+            </div>
+            <div class="bg-blue-100 h-16 p-2 rounded-lg mt-1">
+                <p>innerHTML → Used to get or modify content along with HTML. innerText → Retrieves only the visible text. textContent → Ignores HTML and gets the full text, even if hidden</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-blue-100 h-10 p-2 rounded-lg mt-4">
+                <p class="font-bold">Question-3: What is event delegation in the DOM?</p>
+            </div>
+            <div class="bg-blue-100 h-16 p-2 rounded-lg mt-1">
+                <p>Event Delegation is a technique where an event listener is added to a parent element to handle events on its child elements. It works using Event Bubbling and helps improve performance, memory efficiency</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-blue-100 h-10 p-2 rounded-lg mt-4">
+                <p class="font-bold">Question-4: What is event bubbling in the DOM?</p>
+            </div>
+            <div class="bg-blue-100 h-16 p-2 rounded-lg mt-1">
+                <p>Event Bubbling is a process where an event propagates from the child element to the parent element step by step.
+                    It is enabled by default and can be stopped using event.stopPropagation()
+                  </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="bg-blue-100 h-10 p-2 rounded-lg mt-4">
+                <p class="font-bold">Question-5: How do you create, add, and remove elements using JavaScript?</p>
+            </div>
+            <div class="bg-blue-100 h-16 p-2 rounded-lg mt-1">
+                <p>createElement() → Creates a new element.
+                    appendChild() → Adds an element.
+                    removeChild() → Removes an element
+                    
+                  </p>
+            </div>
+        </section>
+    </main>
+    <script src="script/click.js"></script>
+    <script src="script/back.js"></script>
+    
+</body>
+</html>

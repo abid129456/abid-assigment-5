@@ -3,174 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Second JS Assignment</title>
+    <title>My second JS assignment</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
 </head>
-<body class="font-[Poppins]">
-
-    <div class="container mx-auto p-4">
+<body>
+    <div class="container mx-auto">
         <header>
             <div class="p-2 bg-blue-100 rounded-lg">
                 <nav class="flex justify-between">
                     <div class="flex items-center gap-4">
-                        <img class="h-10 w-10 " src="./assets/logo.png" alt="Logo">
+                            <img class="h-10 w-10 " src="./assets/logo.png" alt="">
                         <h1 class="text-2xl">Dev<span class="font-bold">Board</span></h1>
                     </div>
                     <div class="flex items-center gap-4">
                         <div class="bg-blue-50 rounded-full flex h-9 w-20 items-center justify-center gap-3">
-                            <img class="h-6 w-6" src="./assets/checkbox.png" alt="Completed">
-                            <h1 id="completed-count" class="font-bold text-xl">0</h1>
+                            <img class="h-6 w-6" src="./assets/checkbox.png" alt="">
+                            <h1 id="completed-count" class="font-bold text-xl">23</h1>
                         </div>
-                        <img id="btn-lst" class="h-7 w-7 cursor-pointer" src="./assets/theme-btn.png" alt="Theme">
+                        <img id="btn-lst" class="h-7 w-7" src="./assets/theme-btn.png" alt="">
                     </div>
                 </nav>
             </div>
         </header>
-
+    
+    
         <main>
-            <section class="flex flex-col md:flex-row mt-10 gap-4">
-                <div class="bg-orange-50 rounded-lg p-6 w-full md:w-3/4">
+            <section class="flex mt-10 gap-4">
+                <div class="bg-orange-50 rounded-lg p-6">
                     <div class="flex justify-between">
-                        <div class="flex items-center gap-3 p-5 bg-blue-100 rounded-lg">
-                            <div class="bg-white h-9 w-9 rounded-full flex items-center justify-center">
+                        <div class="flex items-center gap-3 pl-11 pt-5 pr-8 pb-5 bg-blue-100 rounded-lg">
+                            <div class="bg-white h-9 w-9 rounded-full items-center justify-center flex">
                                 <img class="h-5 w-5" src="./assets/checkbox.png" alt="">
                             </div>
                             <div>
                                 <h3>Task Assigned</h3>
-                                <h1 id="task-count" class="font-bold text-xl">6</h1>
+                                <h1 id="task-count" class="font-bold text-xl">06</h1>
                             </div>
                         </div>
-
+    
                         <a href="./index2.html">
-                            <div class="flex items-center gap-3 p-6 bg-gradient-to-r from-blue-500 to-blue-200 rounded-lg w-96">
-                                <img src="./assets/calender.png" alt="Calendar">
+                            <div class="flex items-center gap-3 pt-6 pb-6 pl-11 pr-24 bg-gradient-to-r from-blue-500 to-blue-200 rounded-lg w-96">
+                                <img src="./assets/calender.png" alt="">
                                 <div>
-                                    <h1 class="font-semibold text-xl">Discover Something <br> New Today!</h1>
+                                    <h1 class="font-semibold text-xl">Discover Something <br>New Today!</h1>
                                 </div>
                             </div>
                         </a>
-
-                        <div class="flex items-center gap-3 p-5 bg-blue-100 rounded-lg">
-                            <div class="bg-white h-9 w-9 rounded-full flex items-center justify-center">
+                        
+                        <div class="flex items-center gap-3 pl-11 pt-5 pr-8 pb-5 bg-blue-100 rounded-lg">
+                            <div class="bg-white h-9 w-9 rounded-full items-center justify-center flex">
                                 <img class="h-5 w-5" src="./assets/calender.png" alt="">
                             </div>
                             <div>
                                 <h3>Wed,</h3>
-                                <h1 class="font-bold">Jul 28, 2025</h1>
+                                <h1 class="font-bold">Jul 28 2025</h1>
                             </div>
                         </div>
                     </div>
-
+    
                     <hr class="border-t-2 border-dashed border-gray-200 mt-4">
-
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4 gap-4" id="task-container">
-                        <!-- Tasks Will Be Generated Here -->
+    
+                    <div class="grid grid-cols-3 mt-4 gap-4">
+                        <!-- First Task Div -->
+                        <div class="task-div bg-blue-100 p-4 rounded-lg">
+                            <div class="bg-white rounded-lg p-1 inline-block mb-2">
+                                <h5>ShopEase</h5>
+                            </div>
+                            
+                            <h1 class="text-xl font-semibold mb-2">Fix Mobile Button Issue</h1>
+                            <div class="bg-white rounded-lg p-1 mb-4">
+                                <p class="text-gray-400 p-1 truncate w-60">Debug using Chrome DevTools, <br> check for overlapping elements, and ensure onClick works properly.</p>
+                            </div>
+                            <div class="flex gap-3">
+                                <div>
+                                    <h3 class="text-gray-400">Deadline</h3>
+                                    <h1 class="text-[20px] font-semibold">21 March 2025</h1>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-700 p-3 rounded-lg text-white font-semibold task-btn">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-div bg-blue-100 p-4 rounded-lg">
+                            <div class="bg-white rounded-lg p-1 inline-block mb-2">
+                                <h5>ShopEase</h5>
+                            </div>
+                            
+                            <h1 class="text-xl font-semibold mb-2">Fix Mobile Button Issue</h1>
+                            <div class="bg-white rounded-lg p-1 mb-4">
+                                <p class="text-gray-400 p-1 truncate w-60">Debug using Chrome DevTools, <br> check for overlapping elements, and ensure onClick works properly.</p>
+                            </div>
+                            <div class="flex gap-3">
+                                <div>
+                                    <h3 class="text-gray-400">Deadline</h3>
+                                    <h1 class="text-[20px] font-semibold">21 March 2025</h1>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-700 p-3 rounded-lg text-white font-semibold task-btn">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-div bg-blue-100 p-4 rounded-lg">
+                            <div class="bg-white rounded-lg p-1 inline-block mb-2">
+                                <h5>ShopEase</h5>
+                            </div>
+                            
+                            <h1 class="text-xl font-semibold mb-2">Fix Mobile Button Issue</h1>
+                            <div class="bg-white rounded-lg p-1 mb-4">
+                                <p class="text-gray-400 p-1 truncate w-60">Debug using Chrome DevTools, <br> check for overlapping elements, and ensure onClick works properly.</p>
+                            </div>
+                            <div class="flex gap-3">
+                                <div>
+                                    <h3 class="text-gray-400">Deadline</h3>
+                                    <h1 class="text-[20px] font-semibold">21 March 2025</h1>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-700 p-3 rounded-lg text-white font-semibold task-btn">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-div bg-blue-100 p-4 rounded-lg">
+                            <div class="bg-white rounded-lg p-1 inline-block mb-2">
+                                <h5>ShopEase</h5>
+                            </div>
+                            
+                            <h1 class="text-xl font-semibold mb-2">Fix Mobile Button Issue</h1>
+                            <div class="bg-white rounded-lg p-1 mb-4">
+                                <p class="text-gray-400 p-1 truncate w-60">Debug using Chrome DevTools, <br> check for overlapping elements, and ensure onClick works properly.</p>
+                            </div>
+                            <div class="flex gap-3">
+                                <div>
+                                    <h3 class="text-gray-400">Deadline</h3>
+                                    <h1 class="text-[20px] font-semibold">21 March 2025</h1>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-700 p-3 rounded-lg text-white font-semibold task-btn">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-div bg-blue-100 p-4 rounded-lg">
+                            <div class="bg-white rounded-lg p-1 inline-block mb-2">
+                                <h5>ShopEase</h5>
+                            </div>
+                            
+                            <h1 class="text-xl font-semibold mb-2">Fix Mobile Button Issue</h1>
+                            <div class="bg-white rounded-lg p-1 mb-4">
+                                <p class="text-gray-400 p-1 truncate w-60">Debug using Chrome DevTools, <br> check for overlapping elements, and ensure onClick works properly.</p>
+                            </div>
+                            <div class="flex gap-3">
+                                <div>
+                                    <h3 class="text-gray-400">Deadline</h3>
+                                    <h1 class="text-[20px] font-semibold">21 March 2025</h1>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-700 p-3 rounded-lg text-white font-semibold task-btn">Completed</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="task-div bg-blue-100 p-4 rounded-lg">
+                            <div class="bg-white rounded-lg p-1 inline-block mb-2">
+                                <h5>ShopEase</h5>
+                            </div>
+                            
+                            <h1 class="text-xl font-semibold mb-2">Fix Mobile Button Issue</h1>
+                            <div class="bg-white rounded-lg p-1 mb-4">
+                                <p class="text-gray-400 p-1 truncate w-60">Debug using Chrome DevTools, <br> check for overlapping elements, and ensure onClick works properly.</p>
+                            </div>
+                            <div class="flex gap-3">
+                                <div>
+                                    <h3 class="text-gray-400">Deadline</h3>
+                                    <h1 class="text-[20px] font-semibold">21 March 2025</h1>
+                                </div>
+                                <div>
+                                    <button class="bg-blue-700 p-3 rounded-lg text-white font-semibold task-btn">Completed</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
-                <div class="bg-orange-50 w-full md:w-1/4 rounded-lg p-5">
-                    <div class="flex justify-center gap-3">
-                        <img class="h-5 w-5" src="./assets/activity.png" alt="Activity">
+    
+                <div class="mx-auto bg-orange-50 w-96 rounded-lg">
+                   <div>
+                    <div class="flex p-5 justify-center gap-3">
+                        <img class="h-5 w-5" src="./assets/activity.png" alt="">
                         <h1>Activity Log</h1>
                     </div>
-                    <button class="block mx-auto mt-2 py-1 px-3 bg-blue-700 font-semibold rounded-lg text-white" id="clear-history">
-                        Clear History
-                    </button>
+                    <button class="flex justify-center py-1 px-2 bg-blue-700 font-semibold rounded-lg text-white mx-auto" id="clear-history">Clear History</button>
+                   </div>
                     <hr class="border-t-2 border-dashed border-gray-200 mt-4">
-                    <div id="activity-log" class="mt-2"></div>
+                    <div id="activity-log"></div>
                 </div>
+                
             </section>
         </main>
     </div>
 
-    <script src="script.js"></script>
+  
+    
+<script>
+     document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll('.task-btn');
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-    const tasks = [
-        "Fix Mobile Button Issue",
-        "Update UI for Checkout Page",
-        "Optimize Database Queries",
-        "Improve Login Authentication",
-        "Fix Navigation Bar Bug",
-        "Implement Dark Mode Toggle"
-    ];
+    for (const button of buttons) {
+        button.addEventListener('click', function() {
+            const taskDiv = this.closest('.task-div');
+            taskDiv.classList.add('opacity-50', 'pointer-events-none');
 
-    const taskContainer = document.getElementById("task-container");
-
-    tasks.forEach((task, index) => {
-        const taskDiv = document.createElement("div");
-        taskDiv.classList.add("task-div", "bg-blue-100", "p-4", "rounded-lg");
-
-        taskDiv.innerHTML = `
-            <div class="bg-white rounded-lg p-1 inline-block mb-2">
-                <h5>Project ${index + 1}</h5>
-            </div>
-            <h1 class="text-xl font-semibold mb-2">${task}</h1>
-            <div class="bg-white rounded-lg p-1 mb-4">
-                <p class="text-gray-400 p-1 truncate w-60">This is a description for "${task}".</p>
-            </div>
-            <div class="flex justify-between">
-                <div>
-                    <h3 class="text-gray-400">Deadline</h3>
-                    <h1 class="text-[18px] font-semibold">${new Date(2025, 2, index + 15).toDateString()}</h1>
-                </div>
-                <button class="task-btn bg-blue-700 p-3 rounded-lg text-white font-semibold">
-                    Completed
-                </button>
-            </div>
-        `;
-
-        taskContainer.appendChild(taskDiv);
-    });
-
-    // Task Completed Functionality
-    const buttons = document.querySelectorAll(".task-btn");
-
-    buttons.forEach((button) => {
-        button.addEventListener("click", function () {
-            const taskDiv = this.closest(".task-div");
-            taskDiv.classList.add("opacity-50");
-
-            // Task Description Activity Log
-            const taskDescription = taskDiv.querySelector("h1").innerText;
-            const activityLog = document.getElementById("activity-log");
-            const newLog = document.createElement("div");
-            newLog.classList.add("p-4", "bg-gray-100", "rounded-lg", "mb-4");
+            const taskDescription = taskDiv.querySelector('p').innerText;
+            const activityLog = document.getElementById('activity-log');
+            const newLog = document.createElement('div');
+            newLog.classList.add('p-4', 'bg-gray-100', 'rounded-lg', 'mb-4');
             newLog.innerHTML = `<p>${taskDescription}</p>`;
             activityLog.appendChild(newLog);
 
-            // Update Task Assigned Count
             let taskCount = document.getElementById("task-count");
             let currentTaskCount = parseInt(taskCount.innerText);
             if (currentTaskCount > 0) {
                 taskCount.innerText = currentTaskCount - 1;
             }
 
-            // Update Completed Task Count
             let completedCount = document.getElementById("completed-count");
             let currentCompletedCount = parseInt(completedCount.innerText);
             completedCount.innerText = currentCompletedCount + 1;
 
-            // Disable Button
             this.disabled = true;
             this.innerText = "Done";
-            this.classList.remove("bg-blue-700");
-            this.classList.add("bg-gray-400", "cursor-not-allowed");
+            this.classList.add("bg-gray-400");
         });
-    });
+    }
 
-    // Clear Activity Log
-    document.getElementById("clear-history").addEventListener("click", () => {
-        document.getElementById("activity-log").innerHTML = "";
+    document.getElementById('clear-history').addEventListener('click', () => {
+        document.getElementById('activity-log').innerHTML = '';
     });
 });
 
-    </script>
+</script>
+
+
+
 
 </body>
 </html>

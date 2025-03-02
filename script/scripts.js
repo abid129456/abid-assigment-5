@@ -59,3 +59,18 @@ setTaskCompletedHandler("alert-3", "Review Ami Probashi Site");
 setTaskCompletedHandler("alert-4", "Fix Video loading issue");
 setTaskCompletedHandler("alert-5", "Fix Video loading issue");
 setTaskCompletedHandler("alert-6", "Fix Video loading issue");
+
+
+function setTodayDate() {
+    let today = new Date();
+    
+    let options = { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' };
+    let formattedDate = today.toLocaleDateString('en-US', options);
+    
+    let parts = formattedDate.split(", ");
+    
+    document.getElementById("day").innerText = parts[0] + ",";
+    document.getElementById("date").innerText = parts[1] + " " + parts[2];
+}
+
+window.onload = setTodayDate;
